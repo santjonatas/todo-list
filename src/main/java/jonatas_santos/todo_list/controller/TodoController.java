@@ -1,5 +1,6 @@
 package jonatas_santos.todo_list.controller;
 
+import jakarta.validation.Valid;
 import jonatas_santos.todo_list.entity.TodoEntity;
 import jonatas_santos.todo_list.service.TodoService;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +19,7 @@ public class TodoController {
     }
 
     @PostMapping("/create")
-    public long create(@RequestBody TodoEntity todo) {
+    public long create(@RequestBody @Valid TodoEntity todo) {
         return todoService.create(todo);
     }
 

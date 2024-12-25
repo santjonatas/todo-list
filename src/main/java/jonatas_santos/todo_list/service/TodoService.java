@@ -29,33 +29,21 @@ public class TodoService {
         return todoRepository.findAll(sort);
     }
 
-    public Optional<TodoEntity> get(long id) throws Exception {
+    public Optional<TodoEntity> get(long id){
         var todoEntity = todoRepository.findById(id);
-
-        if(todoEntity == null){
-            throw new Exception("Tarefa Inexistente");
-        }
 
         return todoEntity;
     }
 
-    public long update(TodoEntity todo) throws Exception {
+    public long update(TodoEntity todo){
         var todoEntity = todoRepository.findById(todo.getId());
-
-        if(todoEntity == null){
-            throw new Exception("Tarefa Inexistente");
-        }
 
         todoRepository.save(todo);
         return todo.getId();
     }
 
-    public long delete(long id) throws Exception {
+    public long delete(long id){
         var todoEntity = todoRepository.findById(id);
-
-        if(todoEntity == null){
-            throw new Exception("Tarefa Inexistente");
-        }
 
         todoRepository.deleteById(id);
         return id;
