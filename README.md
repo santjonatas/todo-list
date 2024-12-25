@@ -10,7 +10,7 @@ Este projeto é um aplicativo simples de lista de tarefas desenvolvido em Java e
 ## Pré-requisitos  
 - **Java Development Kit (JDK)**: Certifique-se de que o JDK esteja instalado em sua máquina.  
 - **Maven**: Este projeto utiliza o Maven para gerenciamento de dependências; Certifique-se de que o Maven está instalado.
-- **PostgreSQL Local**: É necessário ter o PostgreSQL instalado localmente. Crie um banco de dados para o aplicativo e configure as credenciais no arquivo application.properties do Spring Boot.
+- **PostgreSQL**: É necessário ter o PostgreSQL instalado localmente. Crie um banco de dados para o aplicativo e configure as credenciais no arquivo application.properties do Spring Boot.
 
 ## Como Começar  
 
